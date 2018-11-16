@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta id="viewport" name="viewport" content="width=device-width, user-scalable=no" />
+	<title>Montando um Portal 2</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+<body>
+	<div class="topo">
+		<div class="topoInt">
+			<div class="topoLeft">
+				<ul>
+					<li>Home</li>
+					<li>Quem Somos</li>
+					<li>Anuncie Aqui</li>
+					<li>Contato</li>
+				</ul>
+			</div>
+			<div class="topoRight">
+				<img src="assets/img/lupa.png" width="26" height="26">
+				<input type="text" placeholder="Buscar..." width="110">
+				<a href="./"><img src="assets/img/rss.png" width="26" height="26"></a>
+				<a href="./"><img src="assets/img/googleplus.png" width="26" height="26"></a>
+				<a href="./"><img src="assets/img/facebook.png" width="26" height="26"></a>
+				<a href="./"><img src="assets/img/twitter.png" width="26" height="26"></a>
+				<a href="./"><img src="assets/img/youtube.png" width="26" height="26"></a>
+			</div>
+		</div>		
+	</div>
+	<div class="topo2">
+		<div class="topo2Int">
+			<div class="logo">
+				<a href="./"><img src="assets/img/logo.png" width="225px" height="75px"></a>
+			</div>
+			<div class="banner">
+				PUBLICIDADE 626x90
+			</div>
+		</div>
+	</div>
+	<div class="menu">
+		<div class="menuInt">
+			<img class="imgMobile" src="assets/img/menu.png" onclick="mostrarMenu()">
+			<ul id="menuMobile">
+				<li>Home</li>
+				<li>Economia</li>				
+				<li>
+					Entretenimento
+					<img src="assets/img/arrowdown.jpg" width="10">
+					<div class="subMenu">
+						<div class="subMenuItem">Item1</div>
+						<div class="subMenuItem">Item2</div>
+						<div class="subMenuItem">Item3</div>
+						<div class="subMenuItem">Item4</div>
+						<div class="subMenuItem">Item5</div>
+						<div class="subMenuItem">Item6</div>
+					</div>
+				</li>
+				<li>
+					Esporte
+					<img src="assets/img/arrowdown.jpg" width="10">
+					<div class="subMenu">
+						<div class="subMenuItem">Item1</div>
+						<div class="subMenuItem">Item2</div>
+						<div class="subMenuItem">Item3</div>
+						<div class="subMenuItem">Item4</div>
+						<div class="subMenuItem">Item5</div>
+						<div class="subMenuItem">Item6</div>
+					</div>
+				</li>
+				<li>Geral</li>
+				<li>
+					Notícias
+					<img src="assets/img/arrowdown.jpg" width="10">
+					<div class="subMenu">
+						<div class="subMenuItem">Item1</div>
+						<div class="subMenuItem">Item2</div>
+						<div class="subMenuItem">Item3</div>
+						<div class="subMenuItem">Item4</div>
+						<div class="subMenuItem">Item5</div>
+						<div class="subMenuItem">Item6</div>
+					</div>
+				</li>
+				<li>Polícia</li>
+				<li>Vídeos</li>
+			</ul>
+		</div>
+	</div>
+	<div class="ultimasNoticias">
+		<div class="ultimasNoticiasInt">
+			<div class="noticia">ÚLTIMAS NOTÍCIAS</div>
+			Notícias atualizadas em primeira mão
+		</div>
+	</div>
+	<div class="conteudo">
+		<div class="conteudoInt">
+			<div class="direito">
+				<div class="bolinhas">
+					<div class="bolinha b0" onclick="MudarSlide(0)"></div>
+					<div class="bolinha b1" onclick="MudarSlide(1)"></div>
+					<div class="bolinha b2" onclick="MudarSlide(2)"></div>
+					<div class="bolinha b3" onclick="MudarSlide(3)"></div>
+				</div>
+				<div class="slideShow" id="slideShow">
+					<div class="slideShowArea">
+						<div class="slide slide1">
+							<div class="linguagem">PHP</div>
+							<div class="descricao">
+								<div class="descricao1">PHP, a linguagem do futuro</div>
+								<div class="descricao2">Uma linguagem de programação dinâmica e de fácil aprendizado</div>
+							</div>
+						</div>
+						<div class="slide slide2">
+							<div class="linguagem">JAVASCRIPT</div>
+							<div class="descricao">
+								<div class="descricao1">JAVASCRIPT, a linguagem do futuro</div>
+								<div class="descricao2">Uma linguagem de manipulação de código dinâmica e de fácil aprendizado</div>
+							</div>
+						</div>
+						<div class="slide slide3">
+							<div class="linguagem">HTML</div>
+							<div class="descricao">
+								<div class="descricao1">HTML, a linguagem do futuro</div>
+								<div class="descricao2">Uma linguagem de marcação de texto dinâmica e de fácil aprendizado</div>
+							</div>
+						</div>
+						<div class="slide slide4">
+							<div class="linguagem">CSS</div>
+							<div class="descricao">
+								<div class="descricao1">CSS, a linguagem do futuro</div>
+								<div class="descricao2">Uma linguagem de design dinâmica e de fácil aprendizado</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="banner">
+					<div class="bannerTitulo">últimas notícias</div>
+					<div class="bannerConteudo">
+						<div class="conteudo1">
+							<div class="bannerImg">
+								<div class="imagem"></div>
+							</div>
+							<div class="bannerTexto">
+								<div class="texto1">
+									Esse é o texto principal.
+								</div>
+								<div class="texto2">
+									Essa é uma breve descrição do texto principal.
+								</div>
+							</div>
+						</div>
+						<div class="conteudo2">
+							<div class="conteudo2Int">
+								<div class="imagem">
+									<div class="imagem1"></div>
+								</div>
+								<div class="texto">
+									<div class="texto1">Texto da notícia menor</div>
+									<div class="texto2">Descrição do texto</div>
+								</div>
+							</div>
+							<div class="conteudo2Int">
+								<div class="imagem">
+									<div class="imagem1"></div>
+								</div>
+								<div class="texto">
+									<div class="texto1">Texto da notícia menor</div>
+									<div class="texto2">Descrição do texto</div>
+								</div>
+							</div>
+							<div class="conteudo2Int">
+								<div class="imagem">
+									<div class="imagem1"></div>
+								</div>
+								<div class="texto">
+									<div class="texto1">Texto da notícia menor</div>
+									<div class="texto2">Descrição do texto</div>
+								</div>
+							</div>
+							<div class="conteudo2Int">
+								<div class="imagem">
+									<div class="imagem1"></div>
+								</div>
+								<div class="texto">
+									<div class="texto1">Texto da notícia menor</div>
+									<div class="texto2">Descrição do texto</div>
+								</div>
+							</div>
+							<div class="conteudo2Int">
+								<div class="imagem">
+									<div class="imagem1"></div>
+								</div>
+								<div class="texto">
+									<div class="texto1">Texto da notícia menor</div>
+									<div class="texto2">Descrição do texto</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="banner">
+					<div class="bannerTitulo">esportes</div>
+					<div class="bannerConteudo">
+						<div class="conteudo1">
+							<div class="bannerImg">
+								<div class="imagem"></div>
+							</div>
+							<div class="bannerTexto">
+								<div class="texto1">
+									Esse é o texto principal.
+								</div>
+								<div class="texto2">
+									Essa é uma breve descrição do texto principal.
+								</div>
+							</div>
+						</div>
+						<div class="conteudo2">
+							<div class="conteudo2Int">
+								<div class="imagem">
+									<div class="imagem1"></div>
+								</div>
+								<div class="texto">
+									<div class="texto1">Texto da notícia menor</div>
+									<div class="texto2">Descrição do texto</div>
+								</div>
+							</div>
+							<div class="conteudo2Int">
+								<div class="imagem">
+									<div class="imagem1"></div>
+								</div>
+								<div class="texto">
+									<div class="texto1">Texto da notícia menor</div>
+									<div class="texto2">Descrição do texto</div>
+								</div>
+							</div>
+							<div class="conteudo2Int">
+								<div class="imagem">
+									<div class="imagem1"></div>
+								</div>
+								<div class="texto">
+									<div class="texto1">Texto da notícia menor</div>
+									<div class="texto2">Descrição do texto</div>
+								</div>
+							</div>
+							<div class="conteudo2Int">
+								<div class="imagem">
+									<div class="imagem1"></div>
+								</div>
+								<div class="texto">
+									<div class="texto1">Texto da notícia menor</div>
+									<div class="texto2">Descrição do texto</div>
+								</div>
+							</div>
+							<div class="conteudo2Int">
+								<div class="imagem">
+									<div class="imagem1"></div>
+								</div>
+								<div class="texto">
+									<div class="texto1">Texto da notícia menor</div>
+									<div class="texto2">Descrição do texto</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="esquerdo">
+				<div class="banner">
+					<div class="titulo">social</div>
+					<div class="conteudo">
+						<div class="imagens">
+							<img src="assets\img\youtube.png" width="30" height="30">
+							<img src="assets\img\twitter.png" width="30" height="30">
+							<img src="assets\img\facebook.png" width="30" height="30">
+							<img src="assets\img\googleplus.png" width="30" height="30">
+							<img src="assets\img\rss.png" width="30" height="30">
+						</div>
+					</div>
+				</div>
+				<div class="banner">
+					<div class="titulo">últimas notícias</div>
+					<div class="conteudo">
+						<div class="noticias">
+							<div class="texto">
+								Esse é um link para a últimas notícia que irá aparecer aqui nesse local.
+							</div>
+						</div>
+						<div class="noticias">
+							<div class="texto">
+								Esse é um link para a últimas notícia que irá aparecer aqui nesse local.
+							</div>
+						</div>
+						<div class="noticias">
+							<div class="texto">
+								Esse é um link para a últimas notícia que irá aparecer aqui nesse local.
+							</div>
+						</div>
+						<div class="noticias">
+							<div class="texto">
+								Esse é um link para a últimas notícia que irá aparecer aqui nesse local.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="banner">
+					<div class="titulo">PUBLICIDADE</div>
+					<div class="conteudo">
+						<div class="imagem">
+							<img src="assets\img\banner.jpg" width="259" height="150">
+						</div>
+					</div>
+				</div>
+				<div class="banner">
+					<div class="titulo">encontre-nos no facebook</div>
+					<div class="conteudo">
+						<div class="imagem">
+							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmetacorposaudavel%2F&amp;tabs&amp;width=264&amp;height=214&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" width="260" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
